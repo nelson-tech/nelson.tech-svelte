@@ -1,0 +1,28 @@
+query GetHome($locale: String, $name: String) {
+	artilleryPages(where: { wpmlLanguage: $locale, name: $name }) {
+		nodes {
+			id
+			databaseId
+			title
+			slug
+			content
+			ACFhome {
+				hero {
+					title
+					text
+					link {
+						url
+						label
+					}
+					image {
+						...ImageBase
+					}
+					overlay {
+						color
+						opacity
+					}
+				}
+			}
+		}
+	}
+}
