@@ -1,0 +1,6 @@
+[submodule "packages/wp"]
+	path = packages/wp
+	url = git@github.com:nelson-tech/svelte-headless-wp.git
+[submodule "packages/i18n"]
+	path = packages/i18n
+	url = git@github.com:nelson-tech/svelte-multilingual.git
